@@ -9,6 +9,8 @@ urlpatterns = [
 
 # Ensure Arches core urls are superseded by project-level urls
 urlpatterns.append(path("", include("arches.urls")))
+urlpatterns.append(path("", include("arches_for_science.urls")))
+urlpatterns.append(path("reports/", include("arches_templating.urls")))
 
 # Adds URL pattern to serve media files during development
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -20,3 +22,10 @@ if settings.ROOT_URLCONF == __name__:
         urlpatterns = i18n_patterns(*urlpatterns)
 
     urlpatterns.append(path("i18n/", include("django.conf.urls.i18n")))
+
+if settings.DEBUG:
+    from django.contrib.staticfiles import views
+    from django.urls import re_path
+    urlpatterns += [
+        re_path(r'^static/(?P<path>.*)$$', views.serve),
+    ]

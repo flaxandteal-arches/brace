@@ -26,6 +26,7 @@ requires-python = ">=3.10"
 dependencies = [
     "arches>=7.6.0,<7.7.0",
     "arches-for-science",
+    "arches_her@git+https://github.com/flaxandteal/arches-her.git@00fc1230f520316cabdce6ee72bb9df4a78e57d9",
     "arches-templating",
 ]
 version = "0.0.1"

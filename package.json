@@ -24,13 +24,13 @@
         "@uppy/dashboard": "3.9.0",
         "@uppy/drag-drop": "3.1.0",
         "@uppy/progress-bar": "3.1.1",
-        "arches": "archesproject/arches#dev/7.6.x",
-        "arches_for_science": "archesproject/arches-for-science#dev/2.0.x",
+        "arches": "git+https://github.com/archesproject/arches#dev/7.6.x",
+        "arches_for_science": "git+https://github.com/archesproject/arches-for-science#dev/2.0.x",
         "plotly": "^1.0.6",
         "typescript": "5.6.2"
     },
     "devDependencies": {
-        "arches-dev-dependencies": "archesproject/arches-dev-dependencies"
+        "arches-dev-dependencies": "git+https://github.com/archesproject/arches-dev-dependencies"
     },
     "nodeModulesPaths": {
         "Plotly": "node_modules/plotly.js-dist"

@@ -39,6 +39,8 @@
         "moment-timezone": "^0.5.45",
         "nomnom": "npm:@gerhobbelt/nomnom",
         "rimraf": "^5.0.7",
-        "underscore": "^1.13.6"
+        "underscore": "^1.13.6",
+        "arches_for_science": "git+https://github.com/archesproject/arches-for-science#dev/2.0.x",
+        "arches": "git+https://github.com/archesproject/arches#dev/7.6.x"
     }
 }

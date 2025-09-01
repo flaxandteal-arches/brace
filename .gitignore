@@ -1,0 +1,22 @@
+*.pyc
+*.log
+node_modules
+coverage/
+brace_demo/logs
+brace_demo/export_deliverables
+brace_demo/cantaloupe/*
+brace_demo/staticfiles
+brace_demo/media/packages
+brace_demo/media/build/
+brace_demo/uploadedfiles/*
+brace_demo/settings_local.py
+webpack-stats.json
+.vscode/
+*.egg-info
+.DS_STORE
+CACHE
+frontend_configuration
+
+# Packaging
+build/
+dist/

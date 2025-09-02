@@ -7,6 +7,9 @@ env:
 jobs:
   Build-Arches:
     runs-on: [self-hosted]
+    permissions:
+      contents: read
+      packages: write
     outputs:
       image: ${{ steps.extract_image_name.outputs.image_name }}
     steps:
@@ -66,6 +69,9 @@ jobs:
           echo "image_name=$name" >> $GITHUB_OUTPUT
   Build-Arches-Static:
     runs-on: [self-hosted]
+    permissions:
+      contents: read
+      packages: write
     needs: [Build-Arches]
     outputs:
       image: ${{ steps.extract_image_name.outputs.image_name }}
@@ -206,6 +212,9 @@ jobs:
   Build-Arches-Final:
     needs: [Build-Arches-Static, Build-Arches]
     runs-on: [self-hosted]
+    permissions:
+      contents: read
+      packages: write
     outputs:
       image: ${{ steps.extract_image_name.outputs.image_name }}
     steps:

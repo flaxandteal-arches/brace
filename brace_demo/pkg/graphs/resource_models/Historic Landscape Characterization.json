@@ -271,7 +271,7 @@
                         "overlayConfigs": [],
                         "overviewzoom": 11,
                         "pointradius": 4,
-                        "selectRelatedSource": "select-application-area",
+                        "selectRelatedSource": "",
                         "selectRelatedSourceLayer": "",
                         "selectSource": "",
                         "selectSourceLayer": "",

@@ -162,7 +162,7 @@ jobs:
           - '5432:5432'
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASS: postgres
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: postgres
           POSTGRES_MULTIPLE_EXTENSIONS: postgis,postgis_topology
           TZ: PST
@@ -335,7 +335,7 @@ jobs:
           - '5432:5432'
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASS: postgres
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: postgres
           POSTGRES_MULTIPLE_EXTENSIONS: postgis,postgis_topology
           TZ: PST

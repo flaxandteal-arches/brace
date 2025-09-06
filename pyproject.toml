@@ -23,7 +23,7 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-    {version = "arches>=8.0.1,<8.1.0", allow-prereleases = true},
+    "arches>=8.0.1b0,<8.2.0",
     "arches_templating"
 ]
 version = "0.0.1"

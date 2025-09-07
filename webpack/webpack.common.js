@@ -43,6 +43,15 @@ module.exports = () => {
         // BEGIN create entry point configurations
 
         const archesCoreEntryPointConfiguration = buildFilepathLookup(Path.resolve(__dirname, ROOT_DIR, 'app', 'media', 'js'));
+        console.log(
+            __dirname, ROOT_DIR, 'app', 'media', 'js'
+        );
+        console.log(
+            Path.resolve(__dirname, ROOT_DIR, 'app', 'media', 'js')
+        );
+        console.log(
+            buildFilepathLookup(Path.resolve(__dirname, ROOT_DIR, 'app', 'media', 'js'))
+        );
         const projectEntryPointConfiguration = buildFilepathLookup(Path.resolve(__dirname, APP_ROOT, 'media', 'js'));
 
         const archesApplicationsEntrypointConfiguration = ARCHES_APPLICATIONS.reduce((acc, archesApplication) => {

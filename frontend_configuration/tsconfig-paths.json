@@ -3,7 +3,7 @@
     "compilerOptions": {
         "paths": {
             "@/arches/*": [
-                "../../ENV/lib/python3.12/site-packages/arches/app/src/arches/*"
+                "../../arches/arches/app/src/arches/*"
             ],
             "@/brace_demo/*": [
                 "../brace_demo/src/brace_demo/*"
